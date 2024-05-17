@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/about-me.css">
 </head>
 
 <body>
@@ -66,7 +68,7 @@
                         Olá!
                     </div>
                     <div>
-                        Me chamo Gabriel.
+                        Me chamo Gabriel
                     </div>
                 </h1>
 
@@ -74,6 +76,8 @@
                     Explore meu portfólio e descubra como minha paixão pela inovação e desenvolvimento pode enriquecer
                     sua equipe
                 </p>
+
+                <span class="span-description">&lt;Desenvolvedor Full Stack/&gt;</span>
 
                 <div id="cta_buttons">
                     <a href="https://github.com/eugabrieldesousa" class="git-button">
@@ -90,12 +94,26 @@
         </section>
     </main>
 
+    <section id="about-me">
+        <div id="text-about-me">
+            <h1 id="title" class="about-me-title">
+                Sobre mim
+            </h1>
+            <p id="description" class="about-me-description">
+                Olá! Sou Gabriel de Sousa, um desenvolvedor full-stack de 19 anos de Joinville, SC. Comecei minha jornada na tecnologia em março de 2022, participando de um curso pela FAPESC e Univille. Trabalhei como Desenvolvedor Full-Stack Jr em um projeto remoto (set 2023 - mar 2024), usando PHP, SQL, JavaScript e CodeIgniter, além de ganhar experiência em Node.js e TypeScript. Também atuei como Analista de Suporte de TI (out 2022 - set 2023), prestando suporte técnico e realizando integração de sistemas. Atualmente, curso Análise e Desenvolvimento de Sistemas na UniSociesc. Sou pontual, dedicado e sempre em busca de novos desafios e conhecimentos no campo da tecnologia. 🚀
+            </p>
+        </div>
+        <div id="content-about-me">
+            <img src="./imgs/eu-pessoa.png" alt="">
+        </div>
+    </section>
+
     <section id="portfolio-slider">
-            <svg id="banner-portfolio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#fa7c4e" fill-opacity="1"
-                    d="M0,160L48,165.3C96,171,192,181,288,197.3C384,213,480,235,576,229.3C672,224,768,192,864,197.3C960,203,1056,245,1152,266.7C1248,288,1344,288,1392,288L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
+        <svg id="banner-portfolio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#2995D9" fill-opacity="1"
+                d="M0,160L48,165.3C96,171,192,181,288,197.3C384,213,480,235,576,229.3C672,224,768,192,864,197.3C960,203,1056,245,1152,266.7C1248,288,1344,288,1392,288L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
         <div id="portfolio-text">
             <h1 class="title">
                 Cases
@@ -129,6 +147,48 @@
             </section>
         </div>
     </section>
+    <section id="contact-me">
+        <div id="text-contact">
+            <h1 class="title">
+                Vamos conversar!
+            </h1>
+            <p class="description">Se você tem uma ideia brilhante ou precisa de ajuda para transformá-la em realidade,
+                estou aqui para ajudar. Como programador apaixonado, estou sempre buscando novos desafios e
+                oportunidades para criar soluções incríveis.</p>
+        </div>
+        <div id="content-contact">
+            <img class="contact-img" src="./imgs/contact-png.jpeg" alt="Programador atendendo um telefone">
+            <div id="text-content-contact">
+                <a class="button" href="">Entre em contato</a>
+                <p class="description">
+                    ao clicar neste botão você será redirecionado para meu contato no whatsapp
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="telEmail">
+            <img src="./imgs/logo-eugabrieldesousa.png" alt="" id="nav_logo">
+            <div>
+                (47) 99731-4944
+            </div>
+            <div>
+                eugabrieldesousa@gmail.com
+            </div>
+        </div>
+
+        <div class="contatoEmail">
+            <label for="">Nome:</label>
+            <input type="text" name="" id="">
+            <label for="">Email</label>
+            <input type="email" name="" id="">
+            <label for="">Assunto:</label>
+            <input type="text" name="" id="">
+            <label for="">Escreva:</label>
+            <textarea name="" id=""></textarea>
+
+        </div>
+    </footer>
     <script>
         var splide = new Splide('.splide', {
             type: 'loop',
