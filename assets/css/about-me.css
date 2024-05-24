@@ -1,0 +1,35 @@
+.about-me {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 4rem;
+}
+
+.about-me-banner img {
+  max-width: 37rem;
+  clip-path: circle(50% at 50% 50%);
+
+}
+
+.about-me-title {
+  max-width: 33.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.about-me-title h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+.about-me-title p {
+  font-size: 1.1rem;
+  font-weight: 358;
+  line-height: 1.4rem;
+}

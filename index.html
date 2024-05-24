@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Gabriel de Sousa</title>
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/techs.css" />
+    <link rel="stylesheet" href="/assets/css/about-me.css" />
+    <link rel="stylesheet" href="/assets/css/cases.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="logo" src="/assets/img/logo-kipgoing.png" alt="" />
+        <ul class="nav-itens">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Cases</li>
+          <li class="nav-item">Contato</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="main-title">
+        <h3>Software engineer</h3>
+        <h1>Meu cativante portfólio</h1>
+        <p>fiz ele com muito carinho! sinta-se a vontade recrutador/empresa</p>
+      </div>
+      <div class="banner">
+        <img class="memoji" src="/assets/img/memoji.jpg" alt="" />
+        <img class="blob" src="/assets/img/blob.png" alt="" />
+      </div>
+    </main>
+
+    <section class="techs">
+      <div class="techs-title">
+        <h1>Techs</h1>
+        <p>
+          Bem-vindo à minha stack, na qual me aperfeiçoo a cada dia. Sou
+          apaixonado por tecnologia e estou sempre em busca de novos
+          conhecimentos para me manter atualizado e entregar o melhor em cada
+          projeto. Minha stack atual é composta por uma combinação de
+          tecnologias modernas e robustas, que me permitem desenvolver soluções
+          eficientes e inovadoras. Vamos dar uma olhada:
+        </p>
+      </div>
+      <div class="grid-techs">
+        <div class="tech-card"><i class="fa-brands fa-react"></i></div>
+        <div class="tech-card"><i class="fa-brands fa-js"></i></div>
+        <div class="tech-card"><i class="fa-brands fa-node"></i></div>
+        <div class="tech-card"><i class="fa-solid fa-database"></i></div>
+        <div class="tech-card"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="tech-card"><i class="fa-brands fa-php"></i></div>
+      </div>
+    </section>
+    <section class="about-me">
+      <div class="about-me-banner"><img src="/assets/img/eu.png" alt="" /></div>
+      <div class="about-me-title">
+        <h1>Sobre mim</h1>
+        <p>
+          Olá, sou Gabriel de Sousa, <span>desenvolvedor </span>full-stack de 19
+          anos de Joinville, Santa Catarina. Iniciei na tecnologia em março de
+          2022, participando de um curso oferecido pela FAPESC e Univille, após
+          um processo seletivo competitivo.
+        </p>
+        <p>
+          Sou pontual, dedicado, comunicativo e atento aos detalhes. Estou
+          sempre buscando novos conhecimentos e desafios, com uma paixão
+          contínua por aprender e evoluir na tecnologia.
+        </p>
+      </div>
+    </section>
+    <section class="slider-cases">
+      <h1>Cases</h1>
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img class="slide-img" src="/assets/img/build.png" alt="" />
+              <div class="slide-title">Prof Bruna</div>
+            </li>
+            <li class="splide__slide">
+              <a href="">
+              <img class="slide-img" src="./assets/img/case1.jpg" alt="" />
+            </a>
+              <div class="slide-title">Am Records</div>
+              <div class="slide-description">Landing page para um estudio de gravação audiovisual e musical</div>
+            </li>
+            <li class="splide__slide">
+              <img class="slide-img" src="/assets/img/build.png" alt="" />
+              <div class="slide-title">Em Contrução</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="work-together">
+        <h1></h1>
+        <p></p>
+        <div class="brands"></div>
+      </div>
+      <div class="form">
+        <input type="text" />
+        <input type="email" />
+        <textarea name="" id=""></textarea>
+
+        <a href="">Submit</a>
+      </div>
+    </footer>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <script>
+      var splide = new Splide(".splide", {
+        type: "loop",
+        perPage: 3,
+        autoplay: true,
+      });
+
+      splide.mount();
+    </script>
+  </body>
+</html>

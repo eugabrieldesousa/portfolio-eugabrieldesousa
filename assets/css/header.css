@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    transition: filter .4s;
+    border-radius: 50%;
+    cursor: progress;
+}
+
+.logo:hover {
+    filter: invert(100);
+}
+
+.nav-itens {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding-right: 5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.nav-itens li {
+    transition: color .3s;
+}
+
+.nav-itens li:hover {
+    color: #8C735D;
+    text-decoration: underline;
+}
