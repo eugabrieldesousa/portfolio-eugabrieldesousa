@@ -4,9 +4,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 100vh;
   gap: 4rem;
-  background-color: #593825;
 }
 
 .slider-cases h1 {
@@ -43,7 +41,7 @@
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
   background-color: white;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .slide-img:hover {
@@ -62,4 +60,24 @@
   padding-top: 1rem;
   font-size: 0.9rem;
   text-align: center;
+}
+
+
+@media (max-width: 1050px) {
+  .splide__track {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .slider-cases {
+    gap: 2rem;
+  }
+  .slider-cases h1 {
+    font-size: 3rem;
+  }
+  .splide__track {
+    max-width: 18rem;
+  }
 }

@@ -1,0 +1,99 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem;
+}
+
+.work-together {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  max-width: 370px;
+}
+
+.work-together h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.work-together p {
+  line-height: 1.3rem;
+}
+
+.brands {
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  width: 100%;
+  max-width: 30rem;
+  color: #2d2d2d;
+}
+
+.form input {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  background-color: #e8e6e6;
+  font-family: "Epilogue";
+  max-width: 30rem;
+}
+
+.form input:focus-visible {
+  outline: none;
+}
+
+.form textarea {
+  border: none;
+  background-color: #e8e6e6;
+  width: 100%;
+  max-width: 30rem;
+  padding: 1rem 1rem 4rem 1rem;
+  resize: none;
+  font-family: "Epilogue";
+}
+
+.form textarea:focus-visible {
+  outline: none;
+}
+
+.form a {
+  text-decoration: none;
+  background-color: #2d2d2d;
+  color: white;
+  font-weight: 600;
+  padding: 1.3rem 1.5rem;
+  text-align: center;
+  width: 14rem;
+}
+
+.form a:hover {
+  filter: brightness(85%);
+}
+
+@media (max-width: 1050px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .work-together {
+    gap: 2rem;
+  }
+
+  .form {
+    align-items: center;
+    justify-content: center;
+  }
+}

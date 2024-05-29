@@ -1,16 +1,14 @@
 .about-me {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 10rem;
   gap: 4rem;
 }
 
 .about-me-banner img {
-  max-width: 37rem;
+  max-width: 30rem;
   clip-path: circle(50% at 50% 50%);
-
 }
 
 .about-me-title {
@@ -32,4 +30,23 @@
   font-size: 1.1rem;
   font-weight: 358;
   line-height: 1.4rem;
+}
+
+@media (max-width: 1050px) {
+  .about-me {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-me-banner img {
+    width: 100%;
+    min-width: 270px;
+  }
+}
+
+@media (max-width: 560px) {
+
+.about-me {
+  padding-top: 3rem;
+}
 }

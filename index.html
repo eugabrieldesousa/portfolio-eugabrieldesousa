@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/assets/css/techs.css" />
     <link rel="stylesheet" href="/assets/css/about-me.css" />
     <link rel="stylesheet" href="/assets/css/cases.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
@@ -32,7 +33,16 @@
           <li class="nav-item">Cases</li>
           <li class="nav-item">Contato</li>
         </ul>
+
+        <div class="mobile-burguer">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
+      <ul class="mobile-nav-itens">
+        <li class="mobile-nav-item">Home</li>
+        <li class="mobile-nav-item">Cases</li>
+        <li class="mobile-nav-item">Contato</li>
+      </ul>
     </header>
     <main class="main-container">
       <div class="main-title">
@@ -95,10 +105,12 @@
             </li>
             <li class="splide__slide">
               <a href="">
-              <img class="slide-img" src="./assets/img/case1.jpg" alt="" />
-            </a>
+                <img class="slide-img" src="./assets/img/case1.jpg" alt="" />
+              </a>
               <div class="slide-title">Am Records</div>
-              <div class="slide-description">Landing page para um estudio de gravação audiovisual e musical</div>
+              <div class="slide-description">
+                Landing page para um estudio de gravação audiovisual e musical
+              </div>
             </li>
             <li class="splide__slide">
               <img class="slide-img" src="/assets/img/build.png" alt="" />
@@ -107,17 +119,27 @@
           </ul>
         </div>
       </section>
-    </section>
+
     <footer>
       <div class="work-together">
-        <h1></h1>
-        <p></p>
-        <div class="brands"></div>
+        <h1>Vamos juntos!</h1>
+        <p>
+          Fico entusiasmado em contribuir com seu projeto, entrar na sua equipe
+          ou até mesmo realizar um trabalho freelance
+        </p>
+        <div class="brands">
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
       </div>
       <div class="form">
-        <input type="text" />
-        <input type="email" />
-        <textarea name="" id=""></textarea>
+        <input type="text" placeholder="Nome" />
+        <input type="email" placeholder="Email" />
+        <textarea
+          name=""
+          id=""
+          placeholder="Escreva sua proposta aqui"
+        ></textarea>
 
         <a href="">Submit</a>
       </div>
@@ -131,9 +153,29 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
         type: "loop",
         perPage: 3,
         autoplay: true,
+        breakpoints: {
+          1050: {
+            perPage: 1,
+          }
+        }
       });
 
       splide.mount();
+
+      let mobileNav = document.querySelector(".mobile-burguer");
+      console.log(mobileNav);
+
+      mobileNav = mobileNav.querySelector(".fa-bars");
+      console.log(mobileNav);
+
+      mobileNav.addEventListener("click", function() {
+    let mobileNavItens = document.querySelector(".mobile-nav-itens");
+    if (mobileNavItens.style.display === "flex") {
+        mobileNavItens.style.display = "none";
+    } else {
+        mobileNavItens.style.display = "flex";
+    } 
+});
     </script>
   </body>
 </html>
